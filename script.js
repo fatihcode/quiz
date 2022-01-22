@@ -1,13 +1,19 @@
 import quiz from "./quiz.js"
 
 const questions = document.getElementById("questions")
-const choice = document.querySelectorAll("a")
+const choice = document.querySelectorAll("button")
+const select = document.querySelectorAll(".select")
 
 const bar = document.getElementById("bar")
 
 const button = document.getElementById("button")
 
+const yeniden = document.getElementById("try")
 
+const card = document.getElementById("card")
+
+
+card.className = "card"
 
 let q = 0
 let answer = ""
@@ -37,14 +43,17 @@ aria-valuemin="0" aria-valuemax="100">${q+1}&nbspof&nbsp${quiz.length}</div>`
     for (let i = 0; i < choice.length; i++) {
 
         choice[i].innerHTML = quiz[q].choice[i]
+        select[i].innerHTML = quiz[q].select[i]
 
 
         choice[i].style.visibility = "visible";
+        select[i].style.visibility = "visible";
 
         // Boş şıkları gizleme
         if (choice[i].innerHTML == "" || choice[i].innerHTML == "undefined") {
 
             choice[i].style.visibility = "hidden";
+            select[i].style.visibility = "hidden";
 
         }
     }
@@ -58,16 +67,12 @@ aria-valuemin="0" aria-valuemax="100">${q+1}&nbspof&nbsp${quiz.length}</div>`
 for (let i = 0; i < choice.length; i++) {
     choice[i].onclick = () => {
 
-        if (q < quiz.length-1) {
+        if (q < quiz.length - 1) {
 
             answer = choice[i].innerHTML
             console.log(answer)
 
-            if (answer == quiz[q].answer) {
-                dogru++
-                console.log("içerde doğru");
-                console.log(dogru)
-            }
+            answer == quiz[q].answer ? dogru++ : ""
 
             q++
             start()
@@ -76,18 +81,13 @@ for (let i = 0; i < choice.length; i++) {
 
 
             answer = choice[i].innerHTML
-            if (answer == quiz[q].answer) {
-                dogru++
-                console.log("içerde doğru");
-                console.log(dogru)
-            }
+            answer == quiz[q].answer ? dogru++ : ""
 
-
-            // dogru > 0 ? dogru++ : dogru = 0
-
+            card.className = "card text-center"
 
             document.querySelector(".card-title").innerHTML = `<p class="fs-1">Quizi Tamamladınız</p>`
             button.innerHTML = `<div class="text-center my-5"><div class="spinner-grow" role="status"></div></div>`
+
 
             setTimeout(() => {
 
@@ -95,7 +95,14 @@ for (let i = 0; i < choice.length; i++) {
             <div class="fs-1 my-4"><span class="text-success">${dogru}</span> Doğru - <span class="text-danger">${quiz.length-dogru}</span> Yanlış</span>
             <hr><div class="progress my-4" style="background-color: #CA4242;">
             <div class="progress-bar bg-success" role="progressbar" style="width: ${(dogru/quiz.length)*100}%;" aria-valuenow="${dogru/quiz.length}" aria-valuemin="0" aria-valuemax="100">${Math.floor((dogru/quiz.length)*100)}%</div>
-            </div>`
+            </div>
+            
+            <a class="btn btn-outline-primary m-2" id="try" onclick="location.reload(true);">Yeniden Dene</a>
+            `
+                // yeniden.onclick = () => {
+                //     location.reload(true)
+                // }
+
 
             }, 1500);
 
