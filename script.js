@@ -8,8 +8,6 @@ const bar = document.getElementById("bar")
 
 const button = document.getElementById("button")
 
-const yeniden = document.getElementById("try")
-
 const card = document.getElementById("card")
 
 
@@ -29,7 +27,7 @@ start();
 function start() {
 
 
-    document.getElementById("quesNum").innerHTML = q + 1
+    document.getElementById("quesNum").innerHTML = (q + 1)+")"
 
     bar.innerHTML = ` <div class="progress-bar bg-info" role="progressbar" style="width: ${((q+1)/quiz.length)*100}%" aria-valuenow="${(q+1)/quiz.length}"
 aria-valuemin="0" aria-valuemax="100">${q+1}&nbspof&nbsp${quiz.length}</div>`
@@ -99,33 +97,7 @@ for (let i = 0; i < choice.length; i++) {
             
             <a class="btn btn-outline-primary m-2" id="try" onclick="location.reload(true);">Yeniden Dene</a>
             `
-                // yeniden.onclick = () => {
-                //     location.reload(true)
-                // }
-
-
             }, 1500);
-
         }
     }
 }
-
-//--------------------------------------------------------
-
-
-
-// let line = [0, 1, 2, 3]
-
-// function random() {
-
-//     random = Math.floor(Math.random() * 4)
-
-//     return line.slice(random, random + 1).join("")
-
-// }
-
-// console.log(line)
-// console.log(random())
-
-
-//--------------------------------------------------------
