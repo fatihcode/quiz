@@ -1,0 +1,121 @@
+[{
+        "question": "JavaScript kodu neler içerir?",
+        "select": ["Yöntem (method) çağırmaları", "HTML etiketleri", "Çalıştırılabilir ifadeler", "Hepsi"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "D"
+    },
+    {
+        "question": "JavaScript'deki yorum satırları, ......... tarafından yok sayılır.",
+        "select": ["bilgisayar", "işletim sistemi", "derleyici", "tarayıcı"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "D"
+    },
+    {
+        "question": "Bir ifade bloğu oluşturmak için birden fazla JS ifadesi ............ içine yazılır.",
+        "select": ["Köşeli parantezler “[ ]”", "Yuvarlak parantezler “( )”", "Süslü parantezler “{ }”", "Hepsi", "Hiçbiri"],
+        "choice": ["A", "B", "C", "D", "E"],
+        "answer": "C"
+    },
+    {
+        "question": "Bir isim ve bir değere sahip olan sırasız özellik koleksiyonuna ne denir?",
+        "select": ["String", "Serileştirilmiş Nesne (Serialized Object)", "Nesne (Object)", "Hiçbiri"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "C"
+    },
+    {
+        "question": "JavaScript ifadeleri ............ tarafından sonlandırılır.",
+        "select": ["“ / ”", "“ ! ”", "“ , ”", "“ ; ”", "Hiçbiri"],
+        "choice": ["A", "B", "C", "D", "E"],
+        "answer": "D"
+    },
+    {
+        "question": "1996 yılında JavaScripti destekleyen ............ tarayıcısı yayınlanmıştır.",
+        "select": ["Netscape Navigator 2.0", "Internet Explorer 2.0", "Netscape Navigator 1.0", "Internet Explorer 1.0"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "A"
+    },
+    {
+        "question": "“ Id ” attribute (özellik) değerine göre bir belge öğesi (document element) nasıl seçilir?",
+        "select": ["“getId()”", "“getElementsById()”", "“get()”", "“getElementById()”", "Hepsi"],
+        "choice": ["A", "B", "C", "D", "E"],
+        "answer": "C"
+    },
+    {
+        "question": "JavaScript ifadeleri ............ grubu olarak adlandırılır.",
+        "select": ["ifade bloğu (statement block)", "kod bloğu", "küme (cluster)", "Hiçbiri"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "A"
+    },
+    {
+        "question": "Yorum ifadesi, ............ ifade türüdür.",
+        "select": ["çalıştırılamayan", "çalıştırılabilir", "kullanışsız", "önemli olmayan"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "A"
+    },
+    {
+        "question": "“setTimeout()” yöntemi ............ için kullanılır.",
+        "select": ["yineleme zamanı", "belirli bir süre sonra çağrılacak bir fonksiyon", "belirli bir süre sonra bir olayın (event) çağırılması", "olayın (event) uyutma moduna sokmak"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "B"
+    },
+    {
+        "question": "Microsoft, ............ isminde bir JavaScript lehçesi geliştirmiştir.",
+        "select": ["MS JavaScript", "MJavaScript", "JScript", "Advanced JavaScript"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "C"
+    },
+    {
+        "question": "JavaScript'i ............ icat etmiştir.",
+        "select": ["Brendan Eich", "Thomas Java", "James Gosling", "Linus Helsinki"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "A"
+    },
+    {
+        "question": "Bir HTML sayfasına JavaScript eklemek için hangi etiket kullanılır?",
+        "select": ["&lt;script=’java’&gt;", "&lt;javascript&gt;", "&lt;script&gt;", "&lt;js&gt;"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "C"
+    },
+    {
+        "question": "Bir web sayfasında “Hello World” yazmak için aşağıdakilerden hangisi doğru kabul edilir?",
+        "select": ["System.out.println(“Hello World”)", "print(“Hello World”)", "response.write(“Hello World”)", "document.write(“Hello World”)"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "D"
+    },
+    {
+        "question": "Öğelerin görünmez olabilmesi için hangi özelliğin (attribute) kullanılması gerekir?",
+        "select": ["visibilty", "visible", "invisibility", "invisible"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "A"
+    },
+    {
+        "question": "Javascript nesne yönelimli (object oriented) bir programlama dilidir.",
+        "select": ["Yanlış", "Doğru"],
+        "choice": ["A", "B"],
+        "answer": "B"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi geçerli bir JavaScript değişken adı değildir?",
+        "select": ["_java_and_ java _names", "2java", "javaandjava", "Hiçbiri"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "B"
+    },
+    {
+        "question": "Aşağıdakilerden hangisi JavaScript kullanarak bir uyarı kutusu görüntülemek için doğru sözdizimidir?",
+        "select": ["“alertbox(“Hello World”)”;", "“msg(“Hello World”)”;", "“msgbox(“Hello World”)”;", "“alert(“Hello World”)”;"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "D"
+    },
+    {
+        "question": "Javascriptin alternatif adı nedir?",
+        "select": ["LimeScript", "ECMScript", "JXXScript", "ECMAScript"],
+        "choice": ["A", "B", "C", "D"],
+        "answer": "D"
+    },
+    {
+        "question": "JavaScript fazladan boşlukları yok sayar.",
+        "select": ["Doğru", "Yanlış"],
+        "choice": ["A", "B"],
+        "answer": "A"
+    }
+]

@@ -1,15 +1,10 @@
-import quiz from "./quiz.js"
-
+const quiz = await (await fetch("./quiz.json")).json()
 const questions = document.getElementById("questions")
 const choice = document.querySelectorAll("button")
 const select = document.querySelectorAll(".select")
-
 const bar = document.getElementById("bar")
-
 const button = document.getElementById("button")
-
 const card = document.getElementById("card")
-
 
 card.className = "card"
 
@@ -29,7 +24,7 @@ function start() {
 
     document.getElementById("quesNum").innerHTML = (q + 1) + ")"
 
-    bar.innerHTML = ` <div class="progress-bar bg-info" role="progressbar" style="width: ${((q+1)/quiz.length)*100}%" aria-valuenow="${(q+1)/quiz.length}"
+    bar.innerHTML = `<div class="progress-bar bg-info" role="progressbar" style="width: ${((q+1)/quiz.length)*100}%" aria-valuenow="${(q+1)/quiz.length}"
 aria-valuemin="0" aria-valuemax="100">${q+1}&nbspof&nbsp${quiz.length}</div>`;
 
     //Soruyu ekrana yazdırma
@@ -72,7 +67,6 @@ for (let i = 0; i < choice.length; i++) {
             start()
 
         } else {
-
 
             answer = choice[i].innerHTML
             answer == quiz[q].answer ? dogru++ : ""
